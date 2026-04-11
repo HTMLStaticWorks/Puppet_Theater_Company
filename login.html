@@ -56,6 +56,16 @@
         .auth-card .social-btn,
         .auth-card a:not(.btn) {
             color: inherit !important;
+            transition: all 0.3s ease;
+        }
+
+        .hover-warning:hover {
+            color: var(--puppet-accent) !important;
+            opacity: 1 !important;
+        }
+
+        .auth-card a.hover-warning:not(:has(img)):hover {
+            text-decoration: underline !important;
         }
 
         /* Social Buttons */
@@ -125,8 +135,13 @@
             border-bottom: 1px solid var(--glass-border);
         }
 
-        .divider:not(:empty)::before { margin-right: .5em; }
-        .divider:not(:empty)::after { margin-left: .5em; }
+        .divider:not(:empty)::before {
+            margin-right: .5em;
+        }
+
+        .divider:not(:empty)::after {
+            margin-left: .5em;
+        }
 
         .auth-logo {
             margin-bottom: 2.5rem;
@@ -210,15 +225,17 @@
                 <div class="mb-3">
                     <label class="form-label auth-label mb-1">Password</label>
                     <input type="password" class="form-control form-control-puppet">
-                    <a href="forgot-password.html" class="small text-warning text-decoration-none hover-warning d-inline-block mt-2">Forgot Password?</a>
+                    <a href="forgot-password.html"
+                        class="small text-warning text-decoration-none hover-warning d-inline-block mt-2">Forgot
+                        Password?</a>
                 </div>
                 <button type="submit" class="btn btn-warning w-100 py-3 fw-bold rounded-pill mb-3 text-dark">
-                    Login to The Stage
+                    Login 
                 </button>
             </form>
 
             <p class="text-center small opacity-75 mb-0">
-                Don't have an account? 
+                Don't have an account?
                 <a href="signup.html" class="text-warning text-decoration-none fw-bold hover-warning">Sign Up</a>
             </p>
         </div>

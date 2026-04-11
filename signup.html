@@ -49,6 +49,25 @@
             color: #0b0f14 !important;
         }
 
+        .auth-card h2,
+        .auth-card p,
+        .auth-card span,
+        .auth-card .form-label,
+        .auth-card .social-btn,
+        .auth-card a:not(.btn) {
+            color: inherit !important;
+            transition: all 0.3s ease;
+        }
+
+        .hover-warning:hover {
+            color: var(--puppet-accent) !important;
+            opacity: 1 !important;
+        }
+
+        .auth-card a.hover-warning:not(:has(img)):hover {
+            text-decoration: underline !important;
+        }
+
         /* Forms */
         .form-control-puppet {
             background: rgba(255, 255, 255, 0.03);
@@ -107,8 +126,13 @@
             border-bottom: 1px solid var(--glass-border);
         }
 
-        .divider:not(:empty)::before { margin-right: .5em; }
-        .divider:not(:empty)::after { margin-left: .5em; }
+        .divider:not(:empty)::before {
+            margin-right: .5em;
+        }
+
+        .divider:not(:empty)::after {
+            margin-left: .5em;
+        }
 
         /* Social Buttons */
         .social-btn {
@@ -116,23 +140,25 @@
             background: rgba(255, 255, 255, 0.05);
             color: inherit;
             border-radius: 12px;
-            padding: 10px;
+            padding: 12px;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 10px;
             transition: all 0.3s ease;
+            margin-bottom: 0.8rem;
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
         }
 
         .social-btn:hover {
             background: rgba(255, 255, 255, 0.12) !important;
             border-color: var(--puppet-accent) !important;
-            transform: translateY(-2px);
+            transform: translateY(-3px) scale(1.02);
             color: var(--puppet-accent) !important;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         /* Fixed Theme Switch for Auth Pages */
@@ -148,6 +174,7 @@
                 top: 1rem;
                 right: 1rem;
             }
+
             .auth-card {
                 padding: 2rem;
             }
@@ -182,23 +209,15 @@
 
             <h2 class="h4 fw-bold text-center mb-4">Join the Troupe</h2>
 
-            <div class="row g-2 mb-4">
-                <div class="col-md-4 col-12">
-                    <a href="#" class="social-btn">
-                        <i class="bi bi-google text-danger"></i> Google
-                    </a>
-                </div>
-                <div class="col-md-4 col-12">
-                    <a href="#" class="social-btn">
-                        <i class="bi bi-facebook text-primary"></i> Facebook
-                    </a>
-                </div>
-                <div class="col-md-4 col-12">
-                    <a href="#" class="social-btn">
-                        <i class="bi bi-apple"></i> Apple
-                    </a>
-                </div>
-            </div>
+            <a href="#" class="social-btn">
+                <i class="bi bi-google text-danger"></i> Continue with Google
+            </a>
+            <a href="#" class="social-btn">
+                <i class="bi bi-facebook text-primary"></i> Continue with Facebook
+            </a>
+            <a href="#" class="social-btn">
+                <i class="bi bi-apple"></i> Continue with Apple
+            </a>
 
             <div class="divider">OR SIGN UP WITH EMAIL</div>
 
@@ -209,19 +228,18 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label auth-label">Email Address</label>
-                    <input type="email" class="form-control form-control-puppet" placeholder="name@example.com" required>
+                    <input type="email" class="form-control form-control-puppet" placeholder="name@example.com"
+                        required>
                 </div>
-                <div class="row g-3">
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label auth-label">Password</label>
-                        <input type="password" class="form-control form-control-puppet" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label class="form-label auth-label">Confirm</label>
-                        <input type="password" class="form-control form-control-puppet"required>
-                    </div>
+                <div class="mb-3">
+                    <label class="form-label auth-label">Password</label>
+                    <input type="password" class="form-control form-control-puppet" required>
                 </div>
-                
+                <div class="mb-3">
+                    <label class="form-label auth-label">Confirm Password</label>
+                    <input type="password" class="form-control form-control-puppet" required>
+                </div>
+
                 <div class="mb-4 form-check">
                     <input type="checkbox" class="form-check-input" id="terms" required>
                     <label class="form-check-label small opacity-75" for="terms">
@@ -235,7 +253,7 @@
             </form>
 
             <p class="text-center small opacity-75 mb-0">
-                Already have an account? 
+                Already have an account?
                 <a href="login.html" class="text-warning text-decoration-none fw-bold hover-warning">Log In</a>
             </p>
         </div>

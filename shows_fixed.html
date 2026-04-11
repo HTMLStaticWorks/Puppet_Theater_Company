@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -31,15 +31,14 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="shows.html">Shows</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shows.html" aria-current="page">Shows</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 <div class="d-flex align-items-center ms-lg-4-logical mt-3 mt-lg-0">
                     <a href="login.html"
-                        class="btn btn-warning fw-bold text-dark px-4 rounded-pill me-3-logical btn-hover-highlight">Login</a>
+                        class="btn btn-warning fw-bold text-dark px-4 rounded-pill me-3-logical">Login</a>
                     <div class="form-check form-switch me-3-logical"><input class="form-check-input" type="checkbox"
                             id="rtl-toggle"><label class="form-check-label small" for="rtl-toggle">RTL</label></div>
                     <div class="form-check form-switch me-3-logical"><input class="form-check-input" type="checkbox"
@@ -53,98 +52,116 @@
     <header
         class="hero-section position-relative overflow-hidden d-flex align-items-center justify-content-center text-center">
         <div class="stage-layer stage-depth-1 position-absolute w-100 h-100"
-            style="background: url('assets/images/workshop.png') center/cover; opacity: 0.6;"></div>
+            style="background: url('assets/images/hero-index.png') center/cover; opacity: 0.6;"></div>
         <div class="stage-layer stage-depth-2 position-absolute w-100 h-100"
             style="background: var(--puppet-gradient-stage);"></div>
         <div class="position-absolute w-100 h-100 top-0 start-0 bg-dark opacity-50 z-2"></div>
         <div class="container position-relative z-3 pt-5 reveal text-white text-shadow">
-            <h1 class="display-3 fw-bold mb-4">Pull the <span class="text-warning">Strings</span></h1>
-            <p class="lead mb-5 opacity-75 max-width-600 mx-auto">Have a question, a proposal, or a story to share? We
-                are
-                always listening.</p>
+            <h1 class="display-3 fw-bold mb-4">Stage <span class="text-warning">Productions</span></h1>
+            <p class="lead opacity-75 max-width-600 mx-auto">From ancient myths to modern fantasies, our current season
+                brings worlds to life, one string at a time.</p>
         </div>
     </header>
 
-    <!-- ??? SECTION 1: THE GRAND ENTRANCE (Interactive Map) -->
+    <!-- ??? SECTION 1: THE SEASON CALENDAR (List Stagger) -->
     <section class="py-section">
         <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-7 reveal">
-                    <div class="map-frame shadow-2xl">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.7845353194093!2d-118.24368!3d34.052234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6342531d1d7%3A0x50cf99039f379!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="row g-5">
+                <div class="col-lg-6 reveal">
+                    <div class="hover-zoom rounded-5 overflow-hidden shadow-2xl">
+                        <img src="assets/images/about-vision.png" alt="Schedule" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-5 reveal" style="transition-delay: 0.2s">
-                    <span class="text-warning fw-bold text-uppercase small tracking-widest mb-3 d-block">FIND US</span>
-                    <h2 class="display-4 fw-bold mb-4">The Mansion <span class="text-warning">Address</span></h2>
-                    <p class="lead mb-5 opacity-75">Nestled in the historic theater district, the PUPPET Mansion's red
-                        velvet curtains are open to all who seek the craft.</p>
-                    <div class="d-flex align-items-center mb-4"><i
-                            class="bi bi-geo-alt-fill text-warning fs-3 me-3"></i> <span>123 Marionette Lane, Theater
-                            District, CA</span></div>
-                    <div class="d-flex align-items-center mb-4"><i
-                            class="bi bi-telephone-fill text-warning fs-3 me-3"></i> <span>+1 (555) 787-7387</span>
+                <div class="col-lg-6 reveal text-center" style="transition-delay: 0.2s">
+                    <h2 class="display-5 fw-bold mb-5">Spring <span class="text-warning">Showtimes</span></h2>
+                    <div class="list-stagger">
+                        <div class="list-stagger-item d-flex justify-content-between align-items-center">
+                            <div><span class="small text-warning d-block">WEEKENDS • 2 PM</span>
+                                <h4 class="h5 mb-0">The Wood-Witch's Secret</h4>
+                            </div>
+                            <span class="badge bg-success-stage px-3 py-2 rounded-pill">Available</span>
+                        </div>
+                        <div class="list-stagger-item d-flex justify-content-between align-items-center"
+                            style="transition-delay: 0.1s">
+                            <div><span class="small text-warning d-block">WEDNESDAYS • 7 PM</span>
+                                <h4 class="h5 mb-0">Pinocchio Restrung</h4>
+                            </div>
+                            <span class="badge bg-danger-stage px-3 py-2 rounded-pill">Sold Out</span>
+                        </div>
+                        <div class="list-stagger-item d-flex justify-content-between align-items-center"
+                            style="transition-delay: 0.2s">
+                            <div><span class="small text-warning d-block">FRIDAYS • 8 PM</span>
+                                <h4 class="h5 mb-0">The Space Trip</h4>
+                            </div>
+                            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill">Few Left</span>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center"><i class="bi bi-envelope-fill text-warning fs-3 me-3"></i>
-                        <span>hello@puppetmansion.com</span>
-                    </div>
+                    <a href="pricing.html"
+                        class="btn btn-warning rounded-pill px-5 py-3 fw-bold mt-5 text-dark d-table mx-auto btn-hover-highlight">Book
+                        Your Seat</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ?? SECTION 2: THE SOCIAL STRING (Social Links) -->
-    <section class="py-section bg-secondary-stage">
+    <!-- ?? SECTION 2: PRIVATE BOOKINGS (Glamour Reveal) -->
+    <section class="py-section bg-curtain-texture text-white overflow-hidden">
         <div class="container">
             <div class="row align-items-center flex-row-reverse g-5">
-                <div class="col-lg-6 reveal social-bounce">
-                    <img src="assets/images/pricing-family-new.png" alt="Social" class="img-fluid rounded-5 shadow-2xl">
+                <div class="col-lg-6 reveal glamour-reveal">
+                    <img src="assets/images/shows-private.png" alt="Private"
+                        class="img-fluid rounded-5 shadow-2xl border border-white border-opacity-10">
                 </div>
-                <div class="col-lg-6 reveal" style="transition-delay: 0.2s">
-                    <h2 class="display-4 fw-bold mb-4">Follow the <span class="text-warning">Threads</span></h2>
-                    <p class="lead mb-5 opacity-75">Stay connected with our nightly performances, workshop highlights,
-                        and community stories. Our strings reach across every social stage.</p>
-                    <div class="d-flex gap-4">
-                        <a href="#" class="social-bounce-item fs-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-bounce-item fs-2"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-bounce-item fs-2"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="social-bounce-item fs-2"><i class="bi bi-youtube"></i></a>
+                <div class="col-lg-6 reveal text-center text-lg-start" style="transition-delay: 0.2s">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3 fw-bold">VIP EXPERIENCE</span>
+                    <h2 class="display-4 fw-bold mb-4">Host Your <span class="text-warning">Private Stage</span></h2>
+                    <p class="lead mb-5 opacity-75">Make your next event truly magical. We offer private showtime
+                        bookings for birthdays, corporate retreats, and exclusive theater tours. Experience the art of
+                        puppetry up-close and personal.</p>
+                    <div class="row g-4 mb-5 text-start">
+                        <div class="col-6">
+                            <h4 class="h6 fw-bold text-warning mb-2"><i class="bi bi-balloon-fill me-2"></i> Birthday
+                                Party</h4>
+                            <p class="small opacity-75">Custom puppet themes for our youngest patrons.</p>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="h6 fw-bold text-warning mb-2"><i class="bi bi-briefcase-fill me-2"></i> Corporate
+                                Retreat</h4>
+                            <p class="small opacity-75">Team-building through the lens of storytelling.</p>
+                        </div>
                     </div>
+                    <a href="contact.html"
+                        class="btn btn-outline-warning rounded-pill px-5 py-3 fw-bold d-inline-block">Inquire
+                        Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ??? SECTION 3: WRITE A SECRET (Creative Form) -->
-    <section class="py-section bg-curtain-texture text-white">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 reveal secret-ink text-center">
-                    <img src="assets/images/about-origin.png" alt="Secret"
-                        class="img-fluid rounded-4 mb-5 shadow-2xl mx-auto d-block"
-                        style="max-width: 400px; width: 100%;">
-                    <h2 class="display-3 fw-bold mb-4">Write a <span class="text-warning">Secret</span></h2>
-                    <p class="lead mb-5 opacity-75">Not a fan of regular forms? Send us a "secret" message�tell us what
-                        stories you want to see, or how puppetry has changed your world.</p>
-                    <form class="text-start bg-glass p-5 rounded-5 border border-white border-opacity-10">
-                        <div class="mb-4">
-                            <label class="form-label small text-warning fw-bold">YOUR NAME (OR ALIAS)</label>
-                            <input type="text"
-                                class="form-control bg-transparent border-white border-opacity-20 text-white p-3 rounded-4">
-                        </div>
-                        <div class="mb-4">
-                            <label class="form-label small text-warning fw-bold">THE SECRET MESSAGE</label>
-                            <textarea
-                                class="form-control bg-transparent border-white border-opacity-20 text-white p-3 rounded-4"
-                                rows="5"></textarea>
+    <!-- ? SECTION 3: COMING SOON: CRYSTAL KINGDOM (Crystal Shimmer) -->
+    <section class="py-section">
+        <div class="container text-center reveal">
+            <div
+                class="crystal-shimmer p-3 p-md-5 rounded-5 border border-white border-opacity-10 bg-glass text-center overflow-hidden">
+                <div class="puppet-string" style="height: 100px; left: 50%;"></div>
+                <h2 class="display-3 fw-bold mb-4">Coming Next Season <br><span class="text-warning">The Crystal
+                        Kingdom</span></h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <img src="assets/images/h2-show4.png" alt="Teaser"
+                            class="img-fluid rounded-4 mb-5 shadow-2xl opacity-75 hover-opacity-100 transition-all duration-1000 mx-auto d-block"
+                            style="max-height: 350px; object-fit: cover;">
+                        <p class="lead text-muted mb-5 italic">"A thousand glass threads, a single frozen heart, and a
+                            world waiting to be thawed."</p>
+                        <div class="countdown-container d-flex justify-content-center gap-3 mb-5">
+                            <div class="countdown-unit"><span>15</span><label>Days</label></div>
+                            <div class="countdown-unit"><span>08</span><label>Hours</label></div>
+                            <div class="countdown-unit"><span>45</span><label>Min</label></div>
                         </div>
                         <button
-                            class="btn btn-warning w-100 py-3 fw-bold text-dark rounded-pill hover-scale btn-hover-highlight">Send
-                            into
-                            the Shadows</button>
-                    </form>
+                            class="btn btn-warning btn-lg px-5 py-3 fw-bold rounded-pill text-dark shadow-xl hover-glow btn-hover-highlight">Get
+                            Notified</button>
+                    </div>
                 </div>
             </div>
         </div>

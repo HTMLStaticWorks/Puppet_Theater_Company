@@ -140,17 +140,23 @@
             background: rgba(255, 255, 255, 0.05);
             color: inherit;
             border-radius: 12px;
-            padding: 12px;
+            padding: 12px 24px;
             width: 100%;
-            display: flex;
+            display: grid;
+            grid-template-columns: 20px 1fr 20px;
             align-items: center;
-            justify-content: center;
             gap: 10px;
             transition: all 0.3s ease;
             margin-bottom: 0.8rem;
             text-decoration: none;
             font-weight: 500;
             font-size: 0.9rem;
+        }
+
+        .social-btn i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .social-btn:hover {
@@ -210,13 +216,13 @@
             <h2 class="h4 fw-bold text-center mb-4">Join the Troupe</h2>
 
             <a href="#" class="social-btn">
-                <i class="bi bi-google text-danger"></i> Continue with Google
+                <i class="bi bi-google text-danger"></i> <span>Continue with Google</span>
             </a>
             <a href="#" class="social-btn">
-                <i class="bi bi-facebook text-primary"></i> Continue with Facebook
+                <i class="bi bi-facebook text-primary"></i> <span>Continue with Facebook</span>
             </a>
             <a href="#" class="social-btn">
-                <i class="bi bi-apple"></i> Continue with Apple
+                <i class="bi bi-apple"></i> <span>Continue with Apple</span>
             </a>
 
             <div class="divider">OR SIGN UP WITH EMAIL</div>

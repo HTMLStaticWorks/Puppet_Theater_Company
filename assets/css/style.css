@@ -1252,3 +1252,6 @@ footer .list-unstyled a {
 footer .list-unstyled a:hover {
     color: var(--puppet-accent) !important;
 }
+
+[data-theme='light'] footer .list-unstyled a:hover { color: #FFD700 !important; }
+[data-theme='light'] .hover-warning:hover { color: #FFD700 !important; }

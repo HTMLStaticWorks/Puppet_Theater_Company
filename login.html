@@ -26,7 +26,7 @@
         /* Glassmorphism Auth Card */
         .auth-card {
             width: 100%;
-            max-width: 450px;
+            max-width: 500px;
             background: var(--glass-bg);
             backdrop-filter: blur(20px);
             border: 1px solid var(--glass-border);
@@ -74,17 +74,23 @@
             background: rgba(255, 255, 255, 0.05);
             color: inherit;
             border-radius: 12px;
-            padding: 12px;
+            padding: 12px 24px;
             width: 100%;
-            display: flex;
+            display: grid;
+            grid-template-columns: 20px 1fr 20px;
             align-items: center;
-            justify-content: center;
             gap: 10px;
             transition: all 0.3s ease;
             margin-bottom: 0.8rem;
             text-decoration: none;
             font-weight: 500;
             font-size: 0.9rem;
+        }
+
+        .social-btn i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .social-btn:hover {
@@ -206,13 +212,13 @@
             <h2 class="h4 fw-bold text-center mb-4">Welcome Back!</h2>
 
             <a href="#" class="social-btn">
-                <i class="bi bi-google text-danger"></i> Continue with Google
+                <i class="bi bi-google text-danger"></i> <span>Continue with Google</span>
             </a>
             <a href="#" class="social-btn">
-                <i class="bi bi-facebook text-primary"></i> Continue with Facebook
+                <i class="bi bi-facebook text-primary"></i> <span>Continue with Facebook</span>
             </a>
             <a href="#" class="social-btn">
-                <i class="bi bi-apple"></i> Continue with Apple
+                <i class="bi bi-apple"></i> <span>Continue with Apple</span>
             </a>
 
             <div class="divider">OR USE EMAIL</div>
@@ -225,12 +231,14 @@
                 <div class="mb-3">
                     <label class="form-label auth-label mb-1">Password</label>
                     <input type="password" class="form-control form-control-puppet">
-                    <a href="forgot-password.html"
-                        class="small text-warning text-decoration-none hover-warning d-inline-block mt-2">Forgot
-                        Password?</a>
+                    <div class="text-end">
+                        <a href="forgot-password.html"
+                            class="small text-warning text-decoration-none hover-warning d-inline-block mt-2">Forgot
+                            Password?</a>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-warning w-100 py-3 fw-bold rounded-pill mb-3 text-dark">
-                    Login 
+                    Login
                 </button>
             </form>
 
